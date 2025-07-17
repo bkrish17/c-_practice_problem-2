@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/krishbhardwaj/github 1/c-_practice_problem-2",
+      "program": "/Users/krishbhardwaj/github 1/c-_practice_problem-2/build/Debug/outDebug"
+    }
+  ]
+}
