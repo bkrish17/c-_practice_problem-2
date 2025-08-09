@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+bool issorted(int arr[], int n) {
+    for (int i = 0; i < n; i++) {           // Loop for each element
+        for (int j = i + 1; j < n; j++) {   // Compare with every next element
+            if (arr[j] < arr[i])            // If a later element is smaller
+                return false;               // Not sorted
+        }
+    }
+    return true; // No violations found
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    if (issorted(arr, n))
+        cout << "Array is sorted" << endl;
+    else
+        cout << "Array is not sorted" << endl;
+
+    return 0;
+}
+
